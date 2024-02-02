@@ -82,50 +82,28 @@ nav ul li:hover{
     font-weight: 500;
     text-transform: uppercase;
 }
-/* cards */
-.card-section{
-    width: 100%;
-    height: 140px;
-    /* background: pink; */
-    /* display: grid;
-    grid-template-columns: repeat(3, 3fr); */
-    display: flex;
-    justify-content: center;
-   align-items: center;
-    gap: 10px;
-    padding:0 200px;
-
-
-}
-
-.card-section .card{
-    width: 300px;
-    height: 80px;
-    /* background: blue; */
-    display: flex;
-    justify-content: center;
-
-
-    
-   
-}
-.card img{
-    width: 60px;
-    height: auto;
-}
-.card .image{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+/* Home cards */
+.home-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+    padding:5px 100px;
+    text-align: center;
     align-items: center;
-    /* background: pink; */
-}
-
-.card .image h5{
-    text-transform: uppercase;
+  }
+  
+  .home-cards img {
+    width: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .home-cards h3 {
     color: green;
-    font-weight: 500;
-}
+  }
+  
+
+  
+
 
 /* banner */
 .banners{
@@ -135,7 +113,7 @@ nav ul li:hover{
     display: flex;
     justify-content: space-between;
     gap: 5px;
-    padding: 5px 5px;
+    padding: 0 5px;
 
 }
 .banners .banner{
@@ -194,3 +172,9 @@ nav ul li:hover{
     font-weight: 500;
     text-transform: uppercase;
 }  
+
+@media(max-width: 1000px){
+    .home-cards{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
