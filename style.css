@@ -173,8 +173,23 @@ nav ul li:hover{
     text-transform: uppercase;
 }  
 
+@media(max-width: 1250px){
+    nav ul{
+     display: none;
+    }
+}
+
 @media(max-width: 1000px){
     .home-cards{
         grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media(max-width: 700px){
+    .home-cards{
+       padding: 0 40px;
+    }
+    .home-cards img{
+        width: 40px;
     }
 }
